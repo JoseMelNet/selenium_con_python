@@ -1,11 +1,11 @@
 import	unittest
 from selenium import webdriver
 
-class SearchTest(unittest.TestCase):
+class SearchTests(unittest.TestCase):
 # Test de busqueda que emula el ingresar una busqueda de algunos elementos en la tienda
 # Para este ejercio, buscamos 'tee' y 'salt sheaker'
     def setUp(self):
-        self.driver = webdriver.Chrome(executable_path= r'C:\Users\melen\Dropbox\Python\Selenium con Python\chromedriver.exe')
+        self.driver = webdriver.Chrome(executable_path= r'C:\Users\melen\Dropbox\Python\Selenium_con_Python\chromedriver.exe')
         driver = self.driver
         driver.implicitly_wait(10)
         driver.maximize_window()

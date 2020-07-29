@@ -7,7 +7,7 @@ class AssertionsTest(unittest.TestCase):
 # Clase encargada de verificar que ciertos elementos esten presentes
       def setUp(self):
           self.driver = webdriver.Chrome(
-            executable_path=r'C:\Users\melen\Dropbox\02 Proyectos Personales\04 Cursos Data Science\Selenium con Python\chromedriver.exe'
+            executable_path=r'C:\Users\melen\Dropbox\Python\Selenium_con_Python\chromedriver.exe'
           )
           driver = self.driver
           driver.implicitly_wait(30)
@@ -20,8 +20,8 @@ class AssertionsTest(unittest.TestCase):
       def test_language_option(self):
           self.assertTrue(self.is_element_present(By.ID, 'select-language'))
       
-      def tearDownClass(self):
-        self.driver.quit()
+      def tearDown(self):
+          self.driver.quit()
       
       def is_element_present(self, how, what):
         try:
