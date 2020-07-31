@@ -7,7 +7,7 @@ class AssertionsTest(unittest.TestCase):
 # Clase encargada de verificar que ciertos elementos esten presentes
       def setUp(self):
           self.driver = webdriver.Chrome(
-            executable_path=r'C:\Users\melen\Dropbox\Python\Selenium_con_Python\chromedriver.exe'
+          executable_path=r'C:\Users\melen\Dropbox\Python\Selenium_con_Python\chromedriver.exe'
           )
           driver = self.driver
           driver.implicitly_wait(30)
