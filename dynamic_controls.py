@@ -15,7 +15,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
 
-# TestCase that implements the test_name_elements() method
+# TestCase that implements the test_dynamic_controls() method
 class DynamicControls(unittest.TestCase):
 
     # Setup: Call to webdriver; open page with .get() method and .click() in "Disappearing Elements" option
