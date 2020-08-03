@@ -17,7 +17,7 @@ class HomePageTests(unittest.TestCase):
         search_field = self.driver.find_element_by_name("q")
 
     def test_search_text_field_by_class_name(self):
-        search_fiel = self.driver.find_element_by_class_name("input-text")
+        search_field = self.driver.find_element_by_class_name("input-text")
 
     def test_search_button_enabled(self):
         button = self.driver.find_element_by_class_name("button")
